@@ -1,4 +1,31 @@
 {% extends "base.html" %}
 {% block content %}
+<style>
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #282A35;
+  color: white;
+  position: relative;
+}
+
+.ribbon {
+  width: 60px;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  right: -25px;
+  top: -12px;
+  text-align: center;
+  border-radius: 25px;
+  transform: rotate(20deg);
+  background-color: #ff9800;
+  color: white;
+}
+</style>
 <div class="body-text"><h1>My book</h1></div>
+<button class="btn">Buy a book <span class="ribbon">HOT</span></button>
 {%endblock%}

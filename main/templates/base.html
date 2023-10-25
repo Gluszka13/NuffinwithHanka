@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <title>Nuffin with Hanka</title>
     </head>
 <body>
-    <center><naw><h1>Nuffin with Hanka</h1></center>
-        <ul>  
-            <li><a href="/home"> Home </a></li>  
-            <li><a href="/about"> About </a></li>  
-            <li><a href="/contact"> Contact </a></li>  
-            <li> <a href="/terms"> Terms of use </a></li>  
-            <li><a href="/shop"> Shop </a></li>  
-        </ul>
-    </naw>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/home">Nufin with Hanka</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/terms">Terms of us</a>
+              </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/shop" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Shop
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Book</a>
+                <a class="dropdown-item" href="#">Film</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Meet me</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="/contact">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav> 
     {% block content %}
     {%endblock%}
 </body>
+<footer>
+    <center><h5>© Copyright 2023- www.hankaaa.com. All rights reserved. Developed by Monisia.</h5></center>
+</footer>
 </html>
