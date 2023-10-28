@@ -26,4 +26,6 @@ urlpatterns = [
     path("contact/", views.contact),
     path("terms/", views.terms),
     path("shop/", views.shop),
+    path("film/", views.film),
+    path("meet/", views.meet),
 ]

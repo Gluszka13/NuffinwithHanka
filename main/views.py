@@ -14,3 +14,9 @@ def terms(request):
 
 def shop(request):
     return render(request, "shop.html")
+
+def film(request):
+    return render(request, "film.html")
+
+def meet(request):
+    return render(request, "meet.html")
