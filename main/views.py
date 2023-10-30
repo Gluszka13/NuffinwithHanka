@@ -20,3 +20,6 @@ def film(request):
 
 def meet(request):
     return render(request, "meet.html")
+
+def login(request):
+    return render(request, "login.html")

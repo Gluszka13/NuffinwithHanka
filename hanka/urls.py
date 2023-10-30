@@ -28,4 +28,5 @@ urlpatterns = [
     path("shop/", views.shop),
     path("film/", views.film),
     path("meet/", views.meet),
+    path("login/", views.login),
 ]
